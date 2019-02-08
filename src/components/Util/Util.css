@@ -1,0 +1,19 @@
+.Results-totalsTitle {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.Results-totalsTitleUnanimous {
+    color: green;
+}
+
+.SignIn-label {
+    display: block;
+    margin: 10px 0 3px 0;
+    text-align: left;
+}
+
+.grid-container-heading {
+    font-size: 30px;
+    margin: 20px;
+}

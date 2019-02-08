@@ -1,0 +1,110 @@
+/* General Application Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+button {
+    width: auto;
+    padding: 8px 26px;
+}
+
+input:focus,
+select:focus,
+button:focus,
+input:hover,
+select:hover,
+button:hover {
+    border: 1px solid #464646;
+    outline: none;
+}
+
+/* App Component Styles */
+
+.app-container {
+    display: grid;
+    grid-template-areas:
+            'topleft topleft topleft topleft topright topright'
+            'bottomleft bottomleft bottomleft bottomright bottomright bottomright';
+    background-color: #2196F3;
+    padding: 5px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.app-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin: 5px;
+}
+
+.grid-container-heading {
+    border: 1px solid #d9d9d9;
+    font-size: 1.875rem;
+    margin: 20px;
+    padding: 10px;
+}
+
+.sub-grid-container,
+.room-container,
+.results-container,
+.pointboard-container,
+.signin-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    display: grid;
+    font-size: 1.5rem;
+    grid-template-areas:
+            'top top'
+            'middle middle'
+            'bottom bottom';
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.grid-item-sub-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-areas:
+            'topleft topleft topleft'
+            'topright topright topright'
+            'left left left'
+            'right right right';
+    }
+}
+
+.location-top {
+    grid-area: top;
+}
+
+.location-middle {
+    grid-area: middle;
+}
+
+.location-bottom {
+    grid-area: bottom;
+}
