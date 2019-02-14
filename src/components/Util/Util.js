@@ -2,7 +2,7 @@ import React from "react";
 
 export const ContainerHeading = props => {
 	return (
-		<div className="grid-container-heading">{props.heading}</div>
+		<div className="heading-lg">{props.heading}</div>
 	);
 };
 

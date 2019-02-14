@@ -8,13 +8,13 @@ import {ContainerHeading} from "../Util/Util";
 class ScoreBoard extends Component {
 	render() {
 		return (
-			<div className="app-item app-pointboard-location">
-				<div className="pointboard-container">
-					<div className="location-top">
+			<div className="app-item-lg location-tr">
+
+					<div className="location-t">
 						<ContainerHeading heading={"Effort Estimate"} />
 					</div>
 
-					<div className="location-middle">
+					<div className="location-m">
 						<table>
 							<tbody>
 							<tr>
@@ -40,8 +40,11 @@ class ScoreBoard extends Component {
 							</tbody>
 						</table>
 					</div>
+					<div className="location-b">
+						{" "}
+					</div>
 
-				</div>
+
 			</div>
 
 		);

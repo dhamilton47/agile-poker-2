@@ -6,13 +6,13 @@ import {ContainerHeading, GridLabel, GridInput} from "../Util/Util";
 class SignIn extends Component {
 	render() {
 		return (
-			<div className="app-item app-signin-location">
-				<div className="signin-container">
-					<div className="location-top">
+			<div className="app-item-lg location-tl">
+
+					<div className="location-t">
 						<ContainerHeading heading={"Join a Room"} />
 					</div>
 
-					<div className="location-middle">
+					<div className="location-m">
 						<GridInput
 							label={'Room name'}
 							type={'text'}
@@ -33,10 +33,10 @@ class SignIn extends Component {
 					</div>
 
 
-					<div className="SignIn-joinButtonContainer">
+					<div className="location-b">
 						<button >Join</button>
 					</div>
-				</div>
+
 			</div>
 		);
 	}

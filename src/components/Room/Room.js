@@ -2,54 +2,50 @@ import React, {Component} from 'react';
 import './Room.css';
 
 import {ContainerHeading} from "../Util/Util";
-import {TableFillRow} from "./components/TableFills/TableFills";
+import {TableHeaderFill, TableDataFill} from "./components/TableFills/TableFills";
 
 class Room extends Component {
 
 	render() {
 		return (
-			<div className="app-item app-room-location">
-				<div className="room-container">
-					<div className="location-top">
+			<div className="app-item-lg location-bl">
+
+					<div className="location-t">
 						<ContainerHeading heading={'Room:  App wireframe'} />
 					</div>
 
-					<div className="location-middle">
-						<div className="Room-userList">
-							<table className="Room-table">
+					<div className="location-m">
+						<div className="">
+							<table className="">
 								<thead>
-								<TableFillRow ClassName={"Room-th"} A={"Players"} B={"Choice"}/>
+								<TableHeaderFill ClassName={"heading-md"} A={"Players"} B={"Choice"}/>
 								</thead>
 								<tbody>
-								<TableFillRow ClassName={"Room-td"} A={"TJ"} B={1}/>
-								<TableFillRow ClassName={"Room-td"} A={"Sam"} B={"5"}/>
-								<TableFillRow ClassName={"Room-td"} A={"Kim"} B={"1"}/>
+								<TableDataFill ClassName='' A={"TJ"} B={1}/>
+								<TableDataFill ClassName='' A={"Sam"} B={"5"}/>
+								<TableDataFill ClassName='' A={"Kim"} B={"1"}/>
 								</tbody>
 							</table>
 						</div>
 
-						<div className="Room-userList">
-							<table className="Results-totalScoresTable">
+						<div className="">
+							<table className="">
 								<thead>
-								<TableFillRow ClassName={"Room-th"} A={"Observers"} B={" "}/>
+								<TableHeaderFill ClassName={"heading-md"} A={"Observers"} B={" "}/>
 								</thead>
 								<tbody>
-								<TableFillRow ClassName={"Room-td"} A={"Dad"} B={null}/>
+								<TableDataFill ClassName='' A={"Dad"} B={null}/>
 								</tbody>
 							</table>
 						</div>
 					</div>
 
-					<div className="location-bottom">
-						<button className="Room-changeNameBtn" >
-							Change Your Name
-						</button>
-
-						<div className="Room-removeUserLabel">
+					<div className="location-b">
+						<div className="">
 							(Double click a username to remove from room)
 						</div>
 					</div>
-				</div>
+
 			</div>
 
 
