@@ -41,7 +41,7 @@ class Room extends Component {
 					</div>
 
 					<div className="location-b">
-						<div className="">
+						<div className="remove-user-label">
 							(Double click a username to remove from room)
 						</div>
 					</div>
