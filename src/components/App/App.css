@@ -35,7 +35,7 @@ button:hover {
     outline: none;
 }
 
-/* App Layout Styles */
+/* App Container Styles */
 
 .app-container-lg {
     background-color: #2196F3;
@@ -49,6 +49,24 @@ button:hover {
     max-width: 900px;
     padding: 5px;
 }
+
+.location-tl {
+    grid-area: topleft;
+}
+
+.location-tr {
+    grid-area: topright;
+}
+
+.location-bl {
+    grid-area: bottomleft;
+}
+
+.location-br {
+    grid-area: bottomright;
+}
+
+/* App Item Styles */
 
 .app-item-lg {
     background-color: rgba(255, 255, 255, 0.8);
@@ -68,14 +86,6 @@ button:hover {
     padding: 1.25rem;
 }
 
-.location-tl {
-    grid-area: topleft;
-}
-
-.location-tr {
-    grid-area: topright;
-}
-
 .location-m {
     grid-area: middle;
 }
@@ -86,13 +96,7 @@ button:hover {
     padding: 1.25rem;
 }
 
-.location-bl {
-    grid-area: bottomleft;
-}
-
-.location-br {
-    grid-area: bottomright;
-}
+/* Heading Styles */
 
 .heading-lg {
     font-size: 1.875rem;

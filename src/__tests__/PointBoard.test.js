@@ -5,6 +5,7 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import PointBoard from '../components/PointBoard/PointBoard';
+import { GridSection } from '../components/Util/Util';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -18,7 +19,7 @@ describe("PointBoard", () => {
 	it('should render an empty div element', () => {
         const wrapper = shallow(<PointBoard/>);
         expect(wrapper.containsAllMatchingElements([
-			<div></div>
+			<GridSection/>
 		])).to.equal(true);
     });
 })

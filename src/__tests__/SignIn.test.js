@@ -5,6 +5,7 @@ import Enzyme, { shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import SignIn from '../components/SignIn/SignIn';
+import { GridSection } from '../components/Util/Util';
 
 Enzyme.configure({ adapter: new Adapter() });
 
@@ -18,11 +19,7 @@ describe("SignIn", () => {
 	it('should render a div containing a header describing the purpose of this component', () => {
         const wrapper = shallow(<SignIn/>);
         expect(wrapper.containsAllMatchingElements([
-			<div>
-				<div>
-					header
-				</div>
-			</div>
+			<GridSection />
 		])).to.equal(true);
     });
 })

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './SignIn.css';
 
-import {ContainerHeading, GridLabel, GridInput} from "../Util/Util";
+import { ContainerHeading, GridLabel, GridInput } from "../Util/Util";
 
 class SignIn extends Component {
 	render() {
@@ -31,7 +31,6 @@ class SignIn extends Component {
 							<option value="observer">Observer</option>
 						</select>
 					</div>
-
 
 					<div className="location-b">
 						<button >Join</button>

@@ -40,6 +40,7 @@ class PointBoard extends Component {
 							</tbody>
 						</table>
 					</div>
+					
 					<div className="location-b">
 						{" "}
 					</div>
