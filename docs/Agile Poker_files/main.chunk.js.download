@@ -1,0 +1,1216 @@
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["main"],{
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Home/Home.css":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/routes/Home/Home.css ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".Home-label {\r\n  display: block;\r\n  margin: 25px 0 3px 0;\r\n}\r\n\r\n.Home-joinButtonContainer {\r\n  margin-top: 25px;\r\n  text-align: right;\r\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Room/Room.css":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/routes/Room/Room.css ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".Room-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n}\r\n\r\n@media (min-width: 800px) {\r\n  .Room-container {\r\n    display: block;\r\n  }\r\n}\r\n\r\n.Room-userContainer,\r\n.Room-scoresContainer {\r\n  width: 390px;\r\n  display: inline-block;\r\n  vertical-align: top;\r\n  padding: 20px;\r\n}\r\n\r\n.Room-heading {\r\n  margin: 20px;\r\n}\r\n\r\n.Room-pointButton {\r\n  display: inline-block;\r\n  vertical-align: top;\r\n  width: 16.66666666666666666667%;\r\n  padding-left: 0;\r\n  padding-right: 0;\r\n}\r\n\r\n.Room-userList {\r\n  list-style-type: none;\r\n  padding: 0;\r\n  margin: 0;\r\n}\r\n\r\n.Room-userListItem {\r\n  padding: 10px;\r\n  border-bottom: 1px solid;\r\n  position: relative;\r\n  cursor: default;\r\n}\r\n\r\n.Room-userListItemNameContainer {\r\n  display: inline-block;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\r\n  vertical-align: top;\r\n  width: calc(100% - 50px);\r\n}\r\n\r\n.Room-userListItemScoreContainer {\r\n  display: inline-block;\r\n  text-align: right;\r\n  vertical-align: top;\r\n  width: 50px;\r\n}\r\n\r\n.Room-hiddenScore {\r\n  background: #000000;\r\n  text-align: center;\r\n}\r\n\r\n.Room-hiddenScore::after {\r\n  content: \".\";\r\n  color: #000000;\r\n}\r\n\r\n.Room-hiddenScore.decided::after {\r\n  content: \"\\2713\";\r\n  color: #ffffff;\r\n}\r\n\r\n.Room-removeUserLabel {\r\n  font-size: 12px;\r\n  font-style: italic;\r\n  text-align: center;\r\n  margin-top: 20px;\r\n}\r\n\r\n.Room-changeNameBtn {\r\n  font-size: 15px;\r\n  vertical-align: middle;\r\n}\r\n\r\n.Room-scoresActionBtn {\r\n  font-size: 15px;\r\n  width: 50%;\r\n}\r\n\r\n.Room-totalsContainer {\r\n  padding: 10px;\r\n  border: 1px solid #d9d9d9;\r\n  margin-top: 15px;\r\n}\r\n\r\n.Room-totalsTitle {\r\n  margin: 0 0 10px 0;\r\n}\r\n\r\n.Room-totalsTitleUnanimous {\r\n  color: green;\r\n}\r\n\r\n.Room-totalScoresTable {\r\n  padding: 0;\r\n  margin: 0;\r\n  border: none;\r\n  width: 100%;\r\n}\r\n\r\n.Room-totalScoresTableHead {\r\n  border-bottom: 1px solid;\r\n}\r\n\r\n.Room-totalScoresTableData {\r\n  padding: 10px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Root/Root.css":
+/*!*************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-oneOf-3-1!./node_modules/postcss-loader/src??postcss!./src/routes/Root/Root.css ***!
+  \*************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "* {\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  color: #000000;\r\n  font-size: 1.5rem;\r\n}\r\n\r\ninput,\r\nselect,\r\nbutton {\r\n  width: 100%;\r\n  background: #fff;\r\n  border: 1px solid #d9d9d9;\r\n  padding: 5px;\r\n  border-radius: 0;\r\n  -webkit-appearance: none;\r\n}\r\n\r\nbutton {\r\n  width: auto;\r\n  padding: 8px 26px;\r\n}\r\n\r\ninput:focus,\r\nselect:focus,\r\nbutton:focus,\r\ninput:hover,\r\nselect:hover,\r\nbutton:hover {\r\n  border: 1px solid #464646;\r\n  outline: none;\r\n}\r\n\r\n/* Root component */\r\n\r\n.Root-container {\r\n  max-width: 800px;\r\n  margin: 0 auto;\r\n  padding: 0 10px;\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./src/App.js":
+/*!********************!*\
+  !*** ./src/App.js ***!
+  \********************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+/* harmony import */ var _routes_Root_Root__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./routes/Root/Root */ "./src/routes/Root/Root.js");
+/* harmony import */ var _routes_Home_Home__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./routes/Home/Home */ "./src/routes/Home/Home.js");
+/* harmony import */ var _routes_Room_Room__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./routes/Room/Room */ "./src/routes/Room/Room.js");
+
+
+
+
+
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\App.js";
+
+
+
+
+
+
+var App =
+/*#__PURE__*/
+function (_Component) {
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(App, _Component);
+
+  function App() {
+    Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
+
+    return Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(App).apply(this, arguments));
+  }
+
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["HashRouter"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_routes_Root_Root__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Switch"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/",
+        component: _routes_Home_Home__WEBPACK_IMPORTED_MODULE_8__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/home/:sessionName",
+        component: _routes_Home_Home__WEBPACK_IMPORTED_MODULE_8__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_6__["Route"], {
+        exact: true,
+        path: "/room/:sessionName",
+        component: _routes_Room_Room__WEBPACK_IMPORTED_MODULE_9__["default"],
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      }))));
+    }
+  }]);
+
+  return App;
+}(react__WEBPACK_IMPORTED_MODULE_5__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App */ "./src/App.js");
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\index.js";
+
+
+
+react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 5
+  },
+  __self: undefined
+}), document.getElementById("root"));
+
+/***/ }),
+
+/***/ "./src/routes/Home/Home.css":
+/*!**********************************!*\
+  !*** ./src/routes/Home/Home.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Home.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Home/Home.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Home.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Home/Home.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Home.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Home/Home.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/routes/Home/Home.js":
+/*!*********************************!*\
+  !*** ./src/routes/Home/Home.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Home.css */ "./src/routes/Home/Home.css");
+/* harmony import */ var _Home_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Home_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\routes\\Home\\Home.js";
+
+
+
+var Home =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Home, _React$Component);
+
+  function Home(props) {
+    var _this;
+
+    Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Home);
+
+    _this = Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Home).call(this, props));
+    _this._joinSession = _this._joinSession.bind(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)));
+    _this._sessionNameChange = _this._onChange.bind(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)), "sessionName");
+    _this._userNameChange = _this._onChange.bind(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)), "userName");
+    _this._userTypeChange = _this._onChange.bind(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this)), "userType");
+    _this.state = {
+      sessionName: _this.props.match.params.sessionName || "",
+      userName: "",
+      userType: "player"
+    };
+    return _this;
+  }
+  /* Action handlers -----------------------------*/
+
+
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Home, [{
+    key: "_joinSession",
+    value: function _joinSession() {
+      var _this$state = this.state,
+          sessionName = _this$state.sessionName,
+          userName = _this$state.userName,
+          userType = _this$state.userType;
+
+      if (!sessionName) {
+        alert("Session name is required");
+        return;
+      }
+
+      if (!userName) {
+        alert("User name is required");
+        return;
+      }
+
+      if (!userType) {
+        alert("User type is required");
+        return;
+      }
+
+      localStorage.setItem("".concat(sessionName, "_user"), userName);
+      localStorage.setItem("".concat(sessionName, "_type"), userType);
+      this.props.history.push("/room/".concat(sessionName));
+    }
+  }, {
+    key: "_onChange",
+    value: function _onChange(type, e) {
+      var state = {};
+      var value = e.target.value.trim();
+      state[type] = value;
+      this.setState(function () {
+        return state;
+      });
+    }
+    /* React methods and lifecyle events -----------*/
+
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 52
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("h2", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }, "Join a session"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("label", {
+        className: "Home-label",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }, "Session name"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("input", {
+        type: "text",
+        value: this.state.sessionName,
+        onChange: this._sessionNameChange,
+        placeholder: "supercalifragilisticexpialidocious",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("label", {
+        className: "Home-label",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }, "User name"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("input", {
+        type: "text",
+        value: this.state.userName,
+        onChange: this._userNameChange,
+        placeholder: "Chim_chim_cher-ee",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("label", {
+        className: "Home-label",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }, "User type"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("select", {
+        value: this.state.userType,
+        onChange: this._userTypeChange,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 72
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        value: "player",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, "Player"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("option", {
+        value: "observer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "Observer")), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
+        className: "Home-joinButtonContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("button", {
+        onClick: this._joinSession,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 78
+        },
+        __self: this
+      }, "Join")));
+    }
+  }]);
+
+  return Home;
+}(react__WEBPACK_IMPORTED_MODULE_6___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/routes/Room/Room.css":
+/*!**********************************!*\
+  !*** ./src/routes/Room/Room.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Room.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Room/Room.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Room.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Room/Room.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Room.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Room/Room.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/routes/Room/Room.js":
+/*!*********************************!*\
+  !*** ./src/routes/Room/Room.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Room_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Room.css */ "./src/routes/Room/Room.css");
+/* harmony import */ var _Room_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Room_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_ScoresTable_ScoresTable__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/ScoresTable/ScoresTable */ "./src/routes/Room/components/ScoresTable/ScoresTable.js");
+/* harmony import */ var _components_RoomHeader_RoomHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/RoomHeader/RoomHeader */ "./src/routes/Room/components/RoomHeader/RoomHeader.js");
+
+
+
+
+
+
+
+
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\routes\\Room\\Room.js";
+
+
+
+
+
+var buttonScores = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+
+var Room =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Room, _React$Component);
+
+  function Room(props) {
+    var _this;
+
+    Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Room);
+
+    _this = Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Room).call(this, props)); // Create functions for each of our buttons here so we only have to create them once
+    // and not every time the component is rendered.
+
+    _this.state = {
+      scoresVisible: false,
+      users: []
+    };
+
+    _this._updateRoomVisibility = function () {
+      _this.dbSession.child("scoresVisible").set(!_this.state.scoresVisible);
+    };
+
+    _this._clearAllUserScores = function () {
+      var users = _this.dbSession.child("users");
+
+      _this.state.users.forEach(function (user) {
+        users.child(user.id).child("score").set(-1);
+      });
+    };
+
+    _this._changeName = function (e) {
+      e.preventDefault();
+      localStorage.removeItem("".concat(_this.sessionName, "_user"));
+
+      _this.props.history.replace("/home/".concat(_this.sessionName));
+    };
+
+    _this._removeUser = function (user, e) {
+      e.preventDefault();
+      var shouldRemove = window.confirm("Are you sure you want to remove ".concat(user.userName, " from the room?"));
+
+      if (shouldRemove) {
+        _this.dbSession.child("users").child(user.id).remove();
+      }
+    };
+
+    _this._setData = function (snapshot) {
+      var newState = snapshot.val();
+      newState.users = _this._prepareUserData(newState.users);
+
+      _this.setState(function (state) {
+        return newState;
+      });
+    };
+
+    _this._calculateTotals = function () {
+      var totals = {};
+
+      var players = _this.state.users.filter(function (user) {
+        return user.userType === "player";
+      });
+
+      players.forEach(function (player) {
+        var score = player.score;
+
+        if (score === -1) {
+          score = "?";
+        }
+
+        var scoresTotal = totals[score];
+
+        if (scoresTotal) {
+          totals[score] += 1;
+        } else {
+          totals[score] = 1;
+        }
+      });
+      return totals;
+    };
+
+    buttonScores.forEach(function (score) {
+      _this["button".concat(score)] = _this._selectButton.bind(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this)), score);
+    });
+    return _this;
+  } // /* React methods and lifecyle events -----------*/
+
+
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Room, [{
+    key: "componentWillMount",
+    value: function () {
+      var _componentWillMount = Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var db, sessionRoom, newUser, dc;
+        return C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                this.sessionName = this.props.match.params.sessionName;
+                this.userName = localStorage.getItem("".concat(this.sessionName, "_user"));
+                this.userType = localStorage.getItem("".concat(this.sessionName, "_type"));
+
+                if (!this.userName) {
+                  this.props.history.replace("/home/".concat(this.sessionName));
+                }
+
+                db = window.firebase.database().ref();
+                _context.next = 7;
+                return db.child("rooms/".concat(this.sessionName)).once("value");
+
+              case 7:
+                sessionRoom = _context.sent;
+
+                // We need to create the room if it doesn't exist.
+                if (!sessionRoom.exists()) {
+                  db.child("rooms").child(this.sessionName).set({
+                    scoresVisible: false
+                  });
+                }
+
+                this.dbSession = db.child("rooms").child(this.sessionName); // Add this user to the db.
+
+                newUser = this.dbSession.child("users").push();
+                this.userKey = newUser.key;
+                newUser.set({
+                  userName: this.userName,
+                  userType: this.userType,
+                  score: -1
+                }); // Remove this user once the browser is closed.
+
+                dc = this.dbSession.child("users").child(this.userKey);
+                dc.onDisconnect().remove(); // Listen for changes in this room.
+
+                this.dbSession.on("value", this._setData);
+
+              case 16:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentWillMount() {
+        return _componentWillMount.apply(this, arguments);
+      }
+
+      return componentWillMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.dbSession.off("value", this._setData);
+      this.dbSession.child("users").child(this.userKey).remove();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          scoresVisible = _this$state.scoresVisible,
+          users = _this$state.users;
+      var players = users.filter(function (user) {
+        return user.userType === "player";
+      });
+      var observers = users.filter(function (user) {
+        return user.userType === "observer";
+      });
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_RoomHeader_RoomHeader__WEBPACK_IMPORTED_MODULE_11__["RoomHeader"], {
+        room: this.sessionName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-userContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, this._renderPointButtons(), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, "Players ---", " ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "Room-changeNameBtn",
+        onClick: this._changeName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, "Change Name")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
+        className: "Room-userList",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, players.map(function (player) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          className: "Room-userListItem",
+          onDoubleClick: _this2._removeUser.bind(_this2, player),
+          key: player.id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 87
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+          className: "Room-userListItemNameContainer",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 92
+          },
+          __self: this
+        }, player.userName), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+          className: "Room-userListItemScoreContainer",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 95
+          },
+          __self: this
+        }, _this2._renderScore(player)));
+      })), observers.length ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104
+        },
+        __self: this
+      }, "Observers"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
+        className: "Room-userList",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        },
+        __self: this
+      }, observers.map(function (observer) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          className: "Room-userListItem",
+          onDoubleClick: _this2._removeUser.bind(_this2, observer),
+          key: observer.id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 107
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 112
+          },
+          __self: this
+        }, observer.userName));
+      }))) : null, observers.length || players.length ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-removeUserLabel",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120
+        },
+        __self: this
+      }, "(Double click a username to remove)") : null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-scoresContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "Room-scoresActionBtn",
+        onClick: this._clearAllUserScores,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127
+        },
+        __self: this
+      }, "Clear scores"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "Room-scoresActionBtn",
+        onClick: this._updateRoomVisibility,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133
+        },
+        __self: this
+      }, scoresVisible ? "Hide" : "Show", " scores"), this._renderScoreTotals()));
+    } // /* View render functions -----------------------------*/
+
+  }, {
+    key: "_renderPointButtons",
+    value: function _renderPointButtons() {
+      var _this3 = this;
+
+      return buttonScores.map(function (score) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+          key: score,
+          className: "Room-pointButton",
+          onClick: _this3["button".concat(score)],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 149
+          },
+          __self: this
+        }, score);
+      });
+    }
+  }, {
+    key: "_renderScore",
+    value: function _renderScore(player) {
+      if (this.state.scoresVisible) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 161
+          },
+          __self: this
+        }, player.score > -1 ? player.score : "");
+      } else {
+        var classNames = ["Room-hiddenScore"];
+
+        if (player.score !== -1) {
+          classNames.push("decided");
+        }
+
+        classNames = classNames.join(" ");
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: classNames,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 168
+          },
+          __self: this
+        });
+      }
+    }
+  }, {
+    key: "_renderScoreTotals",
+    value: function _renderScoreTotals() {
+      var totals = this._calculateTotals();
+
+      var totalsArray = Object.keys(totals).sort(function (a, b) {
+        return a - b;
+      });
+
+      if (this.state.scoresVisible) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "Room-totalsContainer",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 177
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_ScoresTable_ScoresTable__WEBPACK_IMPORTED_MODULE_10__["ScoresTableHeader"], {
+          totalsArray: totalsArray,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 178
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_ScoresTable_ScoresTable__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          totals: totals,
+          totalsArray: totalsArray,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 179
+          },
+          __self: this
+        }));
+      } else {
+        return null;
+      }
+    } // /* Action handlers -----------------------------*/
+
+  }, {
+    key: "_selectButton",
+    value: function _selectButton(score) {
+      if (!this.state.scoresVisible) {
+        this.dbSession.child("users").child(this.userKey).child("score").set(score);
+      }
+    }
+  }, {
+    key: "_prepareUserData",
+    value: function _prepareUserData(users) {
+      var newUsers = [];
+
+      if (users) {
+        Object.keys(users).forEach(function (key) {
+          var userObj = users[key];
+          userObj.id = key;
+          newUsers.push(userObj);
+        });
+      }
+
+      return newUsers;
+    }
+  }]);
+
+  return Room;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Room);
+
+/***/ }),
+
+/***/ "./src/routes/Room/components/RoomHeader/RoomHeader.js":
+/*!*************************************************************!*\
+  !*** ./src/routes/Room/components/RoomHeader/RoomHeader.js ***!
+  \*************************************************************/
+/*! exports provided: RoomHeader */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RoomHeader", function() { return RoomHeader; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\routes\\Room\\components\\RoomHeader\\RoomHeader.js";
+
+var RoomHeader = function RoomHeader(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "Room-heading",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "Session: ", props.room);
+};
+
+/***/ }),
+
+/***/ "./src/routes/Room/components/ScoresTable/ScoresTable.js":
+/*!***************************************************************!*\
+  !*** ./src/routes/Room/components/ScoresTable/ScoresTable.js ***!
+  \***************************************************************/
+/*! exports provided: ScoresTableHeader, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ScoresTableHeader", function() { return ScoresTableHeader; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\routes\\Room\\components\\ScoresTable\\ScoresTable.js";
+
+var ScoresTableHeader = function ScoresTableHeader(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", {
+    className: "Room-totalsTitle",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, "Totals", " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    className: "Room-totalsTitleUnanimous",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, props.totalsArray.length === 1 && props.totalsArray[0] !== "?" ? " - Unanimous!" : ""));
+};
+
+var ScoresTable = function ScoresTable(props) {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("table", {
+    className: "Room-totalScoresTable",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("thead", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+    className: "Room-totalScoresTableHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
+  }, "Score"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }, "#"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, props.totalsArray.map(function (total) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
+      key: total,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      className: "Room-totalScoresTableData",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28
+      },
+      __self: this
+    }, total), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", {
+      className: "Room-totalScoresTableData",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29
+      },
+      __self: this
+    }, props.totals[total]));
+  })));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ScoresTable);
+
+/***/ }),
+
+/***/ "./src/routes/Root/Root.css":
+/*!**********************************!*\
+  !*** ./src/routes/Root/Root.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Root.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Root/Root.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(true) {
+	module.hot.accept(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Root.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Root/Root.css", function() {
+		var newContent = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-oneOf-3-1!../../../node_modules/postcss-loader/src??postcss!./Root.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./src/routes/Root/Root.css");
+
+		if(typeof newContent === 'string') newContent = [[module.i, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ "./src/routes/Root/Root.js":
+/*!*********************************!*\
+  !*** ./src/routes/Root/Root.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! normalize-css/normalize.css */ "./node_modules/normalize-css/normalize.css");
+/* harmony import */ var normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(normalize_css_normalize_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _Root_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Root.css */ "./src/routes/Root/Root.css");
+/* harmony import */ var _Root_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_Root_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\routes\\Root\\Root.js";
+
+
+
+
+var Root =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_4__["default"])(Root, _React$Component);
+
+  function Root() {
+    Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Root);
+
+    return Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Root).apply(this, arguments));
+  }
+
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Root, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "Root-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        },
+        __self: this
+      }, this.props.children);
+    }
+  }]);
+
+  return Root;
+}(react__WEBPACK_IMPORTED_MODULE_5___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Root);
+
+/***/ }),
+
+/***/ 0:
+/*!**********************************************************************************!*\
+  !*** multi ./node_modules/react-dev-utils/webpackHotDevClient.js ./src/index.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! C:\projects\agile-poker\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\projects\agile-poker\src\index.js */"./src/index.js");
+
+
+/***/ })
+
+},[[0,"runtime~main",0]]]);
+//# sourceMappingURL=main.chunk.js.map

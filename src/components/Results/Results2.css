@@ -1,0 +1,48 @@
+.app-results-location {
+    grid-area: bottomright;
+}
+
+.Room-scoresContainer {
+    width: 390px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.Results-totalsContainer {
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    margin-top: 15px;
+}
+
+.Results-totalsTitle {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.Results-totalsTitleUnanimous {
+    color: green;
+}
+
+.Results-table {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+}
+
+.Results-th {
+    margin: 10px;
+    border-bottom: 1px solid;
+}
+
+.Results-td {
+    padding: 10px;
+}
+
+.Results-btn {
+    font-size: 15px;
+    width: 50%;
+}
+
+

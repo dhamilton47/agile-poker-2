@@ -1,0 +1,465 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/routes/Room/Room.js":
+/*!*********************************!*\
+  !*** ./src/routes/Room/Room.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime/helpers/esm/classCallCheck.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/createClass */ "./node_modules/@babel/runtime/helpers/esm/createClass.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/inherits */ "./node_modules/@babel/runtime/helpers/esm/inherits.js");
+/* harmony import */ var C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _Room_css__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Room.css */ "./src/routes/Room/Room.css");
+/* harmony import */ var _Room_css__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_Room_css__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_ScoresTable_ScoresTable__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/ScoresTable/ScoresTable */ "./src/routes/Room/components/ScoresTable/ScoresTable.js");
+/* harmony import */ var _components_RoomHeader_RoomHeader__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/RoomHeader/RoomHeader */ "./src/routes/Room/components/RoomHeader/RoomHeader.js");
+
+
+
+
+
+
+
+
+var _jsxFileName = "C:\\projects\\agile-poker\\src\\routes\\Room\\Room.js";
+
+
+
+
+
+var buttonScores = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
+
+var Room =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_6__["default"])(Room, _React$Component);
+
+  function Room(props) {
+    var _this;
+
+    Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Room);
+
+    _this = Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Room).call(this, props)); // Create functions for each of our buttons here so we only have to create them once
+    // and not every time the component is rendered.
+
+    _this.state = {
+      scoresVisible: false,
+      users: []
+    };
+
+    _this._updateRoomVisibility = function () {
+      _this.dbSession.child("scoresVisible").set(!_this.state.scoresVisible);
+    };
+
+    _this._clearAllUserScores = function () {
+      var users = _this.dbSession.child("users");
+
+      _this.state.users.forEach(function (user) {
+        users.child(user.id).child("score").set(-1);
+      });
+    };
+
+    _this._changeName = function (e) {
+      e.preventDefault();
+      localStorage.removeItem("".concat(_this.sessionName, "_user"));
+
+      _this.props.history.replace("/home/".concat(_this.sessionName));
+    };
+
+    _this._removeUser = function (user, e) {
+      e.preventDefault();
+      var shouldRemove = window.confirm("Are you sure you want to remove ".concat(user.userName, " from the room?"));
+
+      if (shouldRemove) {
+        _this.dbSession.child("users").child(user.id).remove();
+      }
+    };
+
+    _this._setData = function (snapshot) {
+      var newState = snapshot.val();
+      newState.users = _this._prepareUserData(newState.users);
+
+      _this.setState(function (state) {
+        return newState;
+      });
+    };
+
+    _this._calculateTotals = function () {
+      var totals = {};
+
+      var players = _this.state.users.filter(function (user) {
+        return user.userType === "player";
+      });
+
+      players.forEach(function (player) {
+        var score = player.score;
+
+        if (score === -1) {
+          score = "?";
+        }
+
+        var scoresTotal = totals[score];
+
+        if (scoresTotal) {
+          totals[score] += 1;
+        } else {
+          totals[score] = 1;
+        }
+      });
+      return totals;
+    };
+
+    buttonScores.forEach(function (score) {
+      _this["button".concat(score)] = _this._selectButton.bind(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this)), score);
+    });
+    return _this;
+  } // /* React methods and lifecyle events -----------*/
+
+
+  Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Room, [{
+    key: "componentWillMount",
+    value: function () {
+      var _componentWillMount = Object(C_projects_agile_poker_node_modules_babel_runtime_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+      /*#__PURE__*/
+      C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+        var db, sessionRoom, newUser, dc;
+        return C_projects_agile_poker_node_modules_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                this.sessionName = this.props.match.params.sessionName;
+                this.userName = localStorage.getItem("".concat(this.sessionName, "_user"));
+                this.userType = localStorage.getItem("".concat(this.sessionName, "_type"));
+
+                if (!this.userName) {
+                  this.props.history.replace("/home/".concat(this.sessionName));
+                }
+
+                db = window.firebase.database().ref();
+                _context.next = 7;
+                return db.child("rooms/".concat(this.sessionName)).once("value");
+
+              case 7:
+                sessionRoom = _context.sent;
+
+                // We need to create the room if it doesn't exist.
+                if (!sessionRoom.exists()) {
+                  db.child("rooms").child(this.sessionName).set({
+                    scoresVisible: false
+                  });
+                }
+
+                this.dbSession = db.child("rooms").child(this.sessionName); // Add this user to the db.
+
+                newUser = this.dbSession.child("users").push();
+                this.userKey = newUser.key;
+                newUser.set({
+                  userName: this.userName,
+                  userType: this.userType,
+                  score: -1
+                }); // Remove this user once the browser is closed.
+
+                dc = this.dbSession.child("users").child(this.userKey);
+                dc.onDisconnect().remove(); // Listen for changes in this room.
+
+                this.dbSession.on("value", this._setData);
+
+              case 16:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee, this);
+      }));
+
+      function componentWillMount() {
+        return _componentWillMount.apply(this, arguments);
+      }
+
+      return componentWillMount;
+    }()
+  }, {
+    key: "componentWillUnmount",
+    value: function componentWillUnmount() {
+      this.dbSession.off("value", this._setData);
+      this.dbSession.child("users").child(this.userKey).remove();
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          scoresVisible = _this$state.scoresVisible,
+          users = _this$state.users;
+      var players = users.filter(function (user) {
+        return user.userType === "player";
+      });
+      var observers = users.filter(function (user) {
+        return user.userType === "observer";
+      });
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-container",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_RoomHeader_RoomHeader__WEBPACK_IMPORTED_MODULE_11__["RoomHeader"], {
+        room: this.sessionName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-userContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 76
+        },
+        __self: this
+      }, this._renderPointButtons(), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }, "Players ---", " ", react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "Room-changeNameBtn",
+        onClick: this._changeName,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, "Change Name")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
+        className: "Room-userList",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, players.map(function (player) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          className: "Room-userListItem",
+          onDoubleClick: _this2._removeUser.bind(_this2, player),
+          key: player.id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 87
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+          className: "Room-userListItemNameContainer",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 92
+          },
+          __self: this
+        }, player.userName), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+          className: "Room-userListItemScoreContainer",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 95
+          },
+          __self: this
+        }, _this2._renderScore(player)));
+      })), observers.length ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104
+        },
+        __self: this
+      }, "Observers"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("ul", {
+        className: "Room-userList",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 105
+        },
+        __self: this
+      }, observers.map(function (observer) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("li", {
+          className: "Room-userListItem",
+          onDoubleClick: _this2._removeUser.bind(_this2, observer),
+          key: observer.id,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 107
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 112
+          },
+          __self: this
+        }, observer.userName));
+      }))) : null, observers.length || players.length ? react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-removeUserLabel",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120
+        },
+        __self: this
+      }, "(Double click a username to remove)") : null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "Room-scoresContainer",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "Room-scoresActionBtn",
+        onClick: this._clearAllUserScores,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 127
+        },
+        __self: this
+      }, "Clear scores"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "Room-scoresActionBtn",
+        onClick: this._updateRoomVisibility,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133
+        },
+        __self: this
+      }, scoresVisible ? "Hide" : "Show", " scores"), this._renderScoreTotals()));
+    } // /* View render functions -----------------------------*/
+
+  }, {
+    key: "_renderPointButtons",
+    value: function _renderPointButtons() {
+      var _this3 = this;
+
+      return buttonScores.map(function (score) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+          key: score,
+          className: "Room-pointButton",
+          onClick: _this3["button".concat(score)],
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 149
+          },
+          __self: this
+        }, score);
+      });
+    }
+  }, {
+    key: "_renderScore",
+    value: function _renderScore(player) {
+      if (this.state.scoresVisible) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 161
+          },
+          __self: this
+        }, player.score > -1 ? player.score : "");
+      } else {
+        var classNames = ["Room-hiddenScore"];
+
+        if (player.score !== -1) {
+          classNames.push("decided");
+        }
+
+        classNames = classNames.join(" ");
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: classNames,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 168
+          },
+          __self: this
+        });
+      }
+    }
+  }, {
+    key: "_renderScoreTotals",
+    value: function _renderScoreTotals() {
+      var totals = this._calculateTotals();
+
+      var totalsArray = Object.keys(totals).sort(function (a, b) {
+        return a - b;
+      });
+
+      if (this.state.scoresVisible) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+          className: "Room-totalsContainer",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 177
+          },
+          __self: this
+        }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_ScoresTable_ScoresTable__WEBPACK_IMPORTED_MODULE_10__["ScoresTableHeader"], {
+          totalsArray: totalsArray,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 178
+          },
+          __self: this
+        }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(_components_ScoresTable_ScoresTable__WEBPACK_IMPORTED_MODULE_10__["default"], {
+          totals: totals,
+          totalsArray: totalsArray,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 179
+          },
+          __self: this
+        }));
+      } else {
+        return null;
+      }
+    } // /* Action handlers -----------------------------*/
+
+  }, {
+    key: "_selectButton",
+    value: function _selectButton(score) {
+      if (!this.state.scoresVisible) {
+        this.dbSession.child("users").child(this.userKey).child("score").set(score);
+      }
+    }
+  }, {
+    key: "_prepareUserData",
+    value: function _prepareUserData(users) {
+      var newUsers = [];
+
+      if (users) {
+        Object.keys(users).forEach(function (key) {
+          var userObj = users[key];
+          userObj.id = key;
+          newUsers.push(userObj);
+        });
+      }
+
+      return newUsers;
+    }
+  }]);
+
+  return Room;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (Room);
+
+/***/ })
+
+})
+//# sourceMappingURL=main.4ab0793765bfe9d9fa84.hot-update.js.map

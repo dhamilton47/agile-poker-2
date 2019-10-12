@@ -1,19 +1,257 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c1bf306-f6f5-4610-9c40-a5ebed560038" name="Default Changelist" comment="" />
+    <list default="true" id="8c1bf306-f6f5-4610-9c40-a5ebed560038" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/__tests__/PointBoard.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/PopulateTableRow.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/Results.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/Room.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/SignIn.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/TableFills.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/__tests__/Util.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/__tests__/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PointBoard/PointBoard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PointBoard/PointBoard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Results/Results.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results/Results.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Results/Results.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results/Results.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Room/Room.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Room/Room.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Room/Room.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Room/Room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Room/components/TableFills/TableFills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TableFills/TableFills.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="2775" />
-    <option name="y" value="32" />
-    <option name="width" value="1067" />
-    <option name="height" value="948" />
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
   </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersA
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Root-container</find>
+      <find>className</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1RmooMXS6ZhpDt2IRn1zxMj7vij" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../agile-poker" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="$PROJECT_DIR$/node_modules/eslint" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\agile-poker-2\src\components" />
+      <recent name="C:\projects\agile-poker-2\src\__tests__" />
+      <recent name="C:\projects\agile-poker-2\src\components\Results\components" />
+      <recent name="C:\projects\agile-poker-2\src\components\App" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\agile-poker-2\src\components\SignIn" />
+      <recent name="C:\projects\agile-poker-2\src\components\Room" />
+      <recent name="C:\projects\agile-poker-2\src\components\Results" />
+      <recent name="C:\projects\agile-poker-2\src\components\PointBoard" />
+      <recent name="C:\projects\agile-poker-2\src\components\App" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Jest.table header renders without crashing (1)">
+    <configuration name="TableFills.test.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST_FILE" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/TableFills.test.js" />
+      <method v="2" />
+    </configuration>
+    <configuration name="table header renders without crashing (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/PopulateTableRow.test.js" />
+      <test-names>
+        <test-name value="table header renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="table header renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/TableFills.test.js" />
+      <test-names>
+        <test-name value="table header renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="table row renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/__tests__/TableFills.test.js" />
+      <test-names>
+        <test-name value="table row renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="Jest.TableFills.test.js" />
+      <item itemvalue="Jest.table row renders without crashing" />
+      <item itemvalue="Jest.table header renders without crashing" />
+      <item itemvalue="Jest.table header renders without crashing (1)" />
+      <item itemvalue="npm.npm start" />
+      <item itemvalue="npm.test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.table header renders without crashing (1)" />
+        <item itemvalue="Jest.table header renders without crashing" />
+        <item itemvalue="Jest.table row renders without crashing" />
+        <item itemvalue="Jest.TableFills.test.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8c1bf306-f6f5-4610-9c40-a5ebed560038" name="Default Changelist" comment="" />
+      <created>1549305845728</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549305845728</updated>
+      <workItem from="1549305847367" duration="81126000" />
+      <workItem from="1549645374948" duration="10839000" />
+      <workItem from="1549973888024" duration="155000" />
+      <workItem from="1549974136648" duration="10985000" />
+      <workItem from="1550103081082" duration="37899000" />
+      <workItem from="1570281808159" duration="1927000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="table_row_renders_without_crashing - 2019.02.16 at 02h 07m 36s.xml">
+      <configuration name="table row renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_row_renders_without_crashing - 2019.02.16 at 02h 08m 25s.xml">
+      <configuration name="table row renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_row_renders_without_crashing - 2019.02.16 at 02h 09m 05s.xml">
+      <configuration name="table row renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_row_renders_without_crashing - 2019.02.16 at 02h 21m 21s.xml">
+      <configuration name="table row renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_row_renders_without_crashing - 2019.02.17 at 00h 29m 45s.xml">
+      <configuration name="table row renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_row_renders_without_crashing - 2019.02.17 at 00h 30m 01s.xml">
+      <configuration name="table row renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_header_renders_without_crashing - 2019.02.17 at 00h 30m 21s.xml">
+      <configuration name="table header renders without crashing" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_header_renders_without_crashing_(1) - 2019.02.17 at 01h 42m 15s.xml">
+      <configuration name="table header renders without crashing (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_header_renders_without_crashing_(1) - 2019.02.17 at 01h 48m 04s.xml">
+      <configuration name="table header renders without crashing (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="table_header_renders_without_crashing_(1) - 2019.02.17 at 01h 48m 36s.xml">
+      <configuration name="table header renders without crashing (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
