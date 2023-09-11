@@ -21,5 +21,64 @@ describe("SignIn", () => {
         expect(wrapper.containsAllMatchingElements([
 			<GridSection />
 		])).to.equal(true);
-    });
+	});
+/*	
+	it('should start with no room', () => {
+		const wrapper = shallow(<SignIn/>);
+		expect(wrapper.state('sessionName')).to.eql([]);
+	});
+
+	it('should start with no user', () => {
+		const wrapper = shallow(<SignIn/>);
+		expect(wrapper.state('userName')).to.eql([]);
+	});
+
+	it('should start with user type Player', () => {
+		const wrapper = shallow(<SignIn/>);
+		expect(wrapper.state('userType')).to.eql([]);
+	});
+
+
+	it('should accept user data for a room name', () => {
+		expect(true).to.equal(true);
+	});
+/*
+	it('should accept user data for a user name', () => {
+
+	});
+
+	it('should allow the user to select a user type', () => {
+
+	});
+
+	it('should allow access to the room when the entries are valid', () => {
+
+	});
+
+	it('should access the chosen room', () => {
+
+	});
+
+	it('should update the room section for room name and current occupents', () => {
+
+	});
+
+	it('should initialize the totals section', () => {
+
+	});
+
+	it('should update the room section when a user enters', () => {
+
+	});
+
+	it('should update the room section when a user exits', () => {
+
+	});
+
+	it('should accept user data for a room name', () => {
+
+	});
+
+
+*/	
 })

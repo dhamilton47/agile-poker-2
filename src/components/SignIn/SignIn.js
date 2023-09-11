@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './SignIn.css';
 
-import { GridSection, ContainerHeading, GridLabel, GridInput } from "../Util/Util";
+import { GridSection, GridLabel, GridInput } from "../Util/Util";
 
 class SignIn extends Component {
 	render() {

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './Results.css';
 
-import { GridSection, ContainerHeading } from "../Util/Util";
+import { GridSection } from "../Util/Util";
 import { TableHeaderFill, TableDataFill } from "../TableFills/TableFills";
 
 class Results extends Component {

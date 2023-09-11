@@ -28,5 +28,22 @@ describe('App', () => {
             <Results />
         ])).to.equal(true);
     });
+
+	it('should start with no room', () => {
+		const wrapper = shallow(<App/>);
+		expect(wrapper.state('sessionName')).to.eql([]);
+	});
+
+	it('should start with no user', () => {
+		const wrapper = shallow(<App/>);
+		expect(wrapper.state('userName')).to.eql([]);
+	});
+
+	it('should start with user type Player', () => {
+		const wrapper = shallow(<App/>);
+		expect(wrapper.state('userType')).to.eql('Player');
+	});
+
+
 });
 

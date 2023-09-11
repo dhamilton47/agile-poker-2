@@ -17,9 +17,9 @@ describe("PointBoard", () => {
 	});
 	
 	it('should render an empty div element', () => {
-        const wrapper = shallow(<PointBoard/>);
-        expect(wrapper.containsAllMatchingElements([
+    const wrapper = shallow(<PointBoard/>);
+    expect(wrapper.containsAllMatchingElements([
 			<GridSection/>
 		])).to.equal(true);
-    });
+  });
 })

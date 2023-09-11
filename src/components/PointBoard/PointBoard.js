@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import './PointBoard.css';
 
-import { GridSection, ContainerHeading } from "../Util/Util";
+import { GridSection } from "../Util/Util";
 
 //const buttonScores = [0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
 

@@ -7,6 +7,14 @@ import Room from "../Room/Room";
 import Results from "../Results/Results";
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			sessionName: [],
+			userName: [],
+			userType: 'Player'
+		}
+	}
 
 	render() {
 		return (

@@ -21,5 +21,23 @@ describe("Room", () => {
         expect(wrapper.containsAllMatchingElements([
 			<GridSection/>
 		])).to.equal(true);
-    });
+	});
+	
+/*
+	it('should acknowledge a users selection of a value', () => {
+
+	});
+
+	it('should update the room section when a user enters', () => {
+
+	});
+
+	it('should update the room section when a user exits', () => {
+
+	});
+
+	it('should accept user data for a room name', () => {
+
+	}); 
+*/
 })
